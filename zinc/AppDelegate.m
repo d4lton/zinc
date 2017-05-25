@@ -23,9 +23,9 @@ void callback(ConstFSEventStreamRef stream, void *callbackInfo, size_t numEvents
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 
+    // these will be pulled from a preferences pane
     sourceDirectory = @"/Users/dana/src";
     destinationPath = @"96.84.194.75:/data01/";
-    
     exclusions = [NSMutableArray arrayWithCapacity: 20];
     [exclusions addObject: @".*"];
     
