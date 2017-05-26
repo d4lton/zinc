@@ -7,8 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Preferences.h"
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController <NSTableViewDelegate, NSTableViewDataSource> {
+    NSArray *preferenceNames;
+    Preferences *preferences;
+}
+
+@property (weak) IBOutlet NSTableView *tableView;
 
 @end
 

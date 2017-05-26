@@ -55,6 +55,7 @@
 		372740151ED6618200282A9B /* anime_dancer0037.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37273FED1ED6618200282A9B /* anime_dancer0037.gif */; };
 		372740161ED6618200282A9B /* anime_dancer0038.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37273FEE1ED6618200282A9B /* anime_dancer0038.gif */; };
 		372740171ED6618200282A9B /* anime_dancer0039.gif in Resources */ = {isa = PBXBuildFile; fileRef = 37273FEF1ED6618200282A9B /* anime_dancer0039.gif */; };
+		375452691ED7C74800554B06 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 375452681ED7C74800554B06 /* Preferences.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,8 +91,8 @@
 		37273F0B1ED6180C00282A9B /* zincUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zincUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37273F0F1ED6180C00282A9B /* zincUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zincUITests.m; sourceTree = "<group>"; };
 		37273F111ED6180C00282A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37273F741ED63A7500282A9B /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
-		37273F751ED63A7500282A9B /* Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation.m; sourceTree = "<group>"; };
+		37273F741ED63A7500282A9B /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Animation.h; path = ../Animation.h; sourceTree = "<group>"; };
+		37273F751ED63A7500282A9B /* Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Animation.m; path = ../Animation.m; sourceTree = "<group>"; };
 		37273FC81ED6618200282A9B /* anime_dancer0000.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anime_dancer0000.gif; sourceTree = "<group>"; };
 		37273FC91ED6618200282A9B /* anime_dancer0001.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anime_dancer0001.gif; sourceTree = "<group>"; };
 		37273FCA1ED6618200282A9B /* anime_dancer0002.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anime_dancer0002.gif; sourceTree = "<group>"; };
@@ -132,6 +133,8 @@
 		37273FED1ED6618200282A9B /* anime_dancer0037.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anime_dancer0037.gif; sourceTree = "<group>"; };
 		37273FEE1ED6618200282A9B /* anime_dancer0038.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anime_dancer0038.gif; sourceTree = "<group>"; };
 		37273FEF1ED6618200282A9B /* anime_dancer0039.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anime_dancer0039.gif; sourceTree = "<group>"; };
+		375452671ED7C74800554B06 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
+		375452681ED7C74800554B06 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +165,6 @@
 		37273EE11ED6180C00282A9B = {
 			isa = PBXGroup;
 			children = (
-				37273F741ED63A7500282A9B /* Animation.h */,
-				37273F751ED63A7500282A9B /* Animation.m */,
 				37273EEC1ED6180C00282A9B /* zinc */,
 				37273F031ED6180C00282A9B /* zincTests */,
 				37273F0E1ED6180C00282A9B /* zincUITests */,
@@ -184,15 +185,19 @@
 		37273EEC1ED6180C00282A9B /* zinc */ = {
 			isa = PBXGroup;
 			children = (
-				37273F1D1ED6332300282A9B /* Assets */,
+				37273F741ED63A7500282A9B /* Animation.h */,
+				37273F751ED63A7500282A9B /* Animation.m */,
 				37273EED1ED6180C00282A9B /* AppDelegate.h */,
 				37273EEE1ED6180C00282A9B /* AppDelegate.m */,
+				37273F1D1ED6332300282A9B /* Assets */,
+				37273EF61ED6180C00282A9B /* Assets.xcassets */,
+				37273EFB1ED6180C00282A9B /* Info.plist */,
+				37273EF81ED6180C00282A9B /* Main.storyboard */,
+				375452671ED7C74800554B06 /* Preferences.h */,
+				375452681ED7C74800554B06 /* Preferences.m */,
+				37273EF01ED6180C00282A9B /* Supporting Files */,
 				37273EF31ED6180C00282A9B /* ViewController.h */,
 				37273EF41ED6180C00282A9B /* ViewController.m */,
-				37273EF61ED6180C00282A9B /* Assets.xcassets */,
-				37273EF81ED6180C00282A9B /* Main.storyboard */,
-				37273EFB1ED6180C00282A9B /* Info.plist */,
-				37273EF01ED6180C00282A9B /* Supporting Files */,
 			);
 			path = zinc;
 			sourceTree = "<group>";
@@ -465,6 +470,7 @@
 				37273EF21ED6180C00282A9B /* main.m in Sources */,
 				37273F761ED63A7500282A9B /* Animation.m in Sources */,
 				37273EEF1ED6180C00282A9B /* AppDelegate.m in Sources */,
+				375452691ED7C74800554B06 /* Preferences.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +705,7 @@
 				37273F161ED6180C00282A9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37273F171ED6180C00282A9B /* Build configuration list for PBXNativeTarget "zincTests" */ = {
 			isa = XCConfigurationList;
@@ -707,6 +714,7 @@
 				37273F191ED6180C00282A9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37273F1A1ED6180C00282A9B /* Build configuration list for PBXNativeTarget "zincUITests" */ = {
 			isa = XCConfigurationList;
@@ -715,6 +723,7 @@
 				37273F1C1ED6180C00282A9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
